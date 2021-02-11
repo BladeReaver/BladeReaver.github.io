@@ -20,3 +20,9 @@
 
 ### Funny:
 - https://pics.me.me/when-youre-really-a-backend-developer-but-market-yourself-as-34353166.png
+
+### Useful browser extensions:
+- EditThisCookie
+- JSON Formatter
+- Dark reader
+- SponsorKliks
