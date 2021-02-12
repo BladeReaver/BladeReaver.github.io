@@ -1,0 +1,49 @@
+site_name: Chris Romkema
+theme:
+  name: null
+  palette:
+    primary: blue
+    accent: teal
+    scheme: slate
+  custom_dir: ../mkdocs-material/material
+
+  # 404 page
+  static_templates:
+    - 404.html
+
+  # Necessary for search to work properly
+  include_search_page: false
+  search_index_only: true
+
+  # Default values, taken from mkdocs_theme.yml
+  language: en
+  font:
+    text: Roboto
+    code: Roboto Mono
+  favicon: assets/favicon.png
+  icon:
+    logo: logo
+
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+#    - toc.integrate
+
+extra:
+  social:
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/chrisromkema/
+      name: Chris Romkema on LinkedIn
+    - icon: fontawesome/brands/github
+      link: https://github.com/BladeReaver
+      name: Chris Romkema on GitHub
+    - icon: fontawesome/brands/instagram
+      link: https://www.instagram.com/blade_reaver/
+      name: Chris Romkema on Instagram
+
+nav:
+  - home:
+    - about me: me/me.md
+    - resume: me/resume.md
+  - useful links:
+    - links: useful-links.md
