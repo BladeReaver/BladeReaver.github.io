@@ -29,17 +29,5 @@ mvn release:perform'''
       }
     }
 
-    stage('Automated tests against TST deployment') {
-      steps {
-        sh 'java -jar automated-tests.jar'
-      }
-    }
-
-    stage('Deploy on ACC') {
-      steps {
-        sh '// Trigger ACC deployment'
-      }
-    }
-
   }
 }
