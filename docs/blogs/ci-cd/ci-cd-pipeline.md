@@ -7,11 +7,13 @@ and when can you actually call your pipeline a CI/CD pipeline? Let's take a furt
 The examples that I have seen which are being called a CI/CD pipeline fall into three categories, and 
 I would qualify them differently, also I would state each one further in the list is a more mature
 version of the previous one.
+
 - Deployment pipeline
 - CI/CD(eployment) pipeline
 - CI/CD(elivery) pipeline
 
-!!! Following is purely my vision about pipelines and CI/CD, if you have a different vision it could be correct or even
+!!! Info
+    Following is purely my vision about pipelines and CI/CD, if you have a different vision it could be correct or even
     better than mine. If you want to start a discussion you can contact me, I'm always open for good discussions.
 
 ### Deployment pipeline
@@ -19,7 +21,7 @@ version of the previous one.
 This is a pipeline which would start on a push to a specific branch (develop or master), and would do a few steps in 
 succession usually compiling, unit tests, creating deployable artifact, and deploy on a (test) machine. 
 
-![Deployment pipeline](build-pipeline.png)
+![Deployment pipeline](build-pipeline.PNG)
 
 Is this a good pipeline? Well it's a start and adds benefit for developers, but is it an actual CI/CD pipeline? In that 
 case I would have to say no. It is a nice basis, but before it can add value for other people it would need something 
