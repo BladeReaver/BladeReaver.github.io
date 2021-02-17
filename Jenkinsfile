@@ -41,29 +41,5 @@ mvn release:perform'''
       }
     }
 
-    stage('Automated regression tests against ACC') {
-      steps {
-        sh 'java -jar automated-regression-tests.jar'
-      }
-    }
-
-    stage('Create PRD change/release') {
-      steps {
-        sh '// Create change in some tool'
-      }
-    }
-
-    stage('Manual gate') {
-      steps {
-        input 'Approved for deployment'
-      }
-    }
-
-    stage('Deploy on PRD') {
-      steps {
-        sh '// Start production deployment'
-      }
-    }
-
   }
 }
