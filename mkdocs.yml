@@ -29,6 +29,10 @@ theme:
     - navigation.tabs.sticky
 #    - toc.integrate
 
+markdown_extensions:
+  - admonition
+  - footnotes
+
 extra:
   social:
     - icon: fontawesome/brands/linkedin
