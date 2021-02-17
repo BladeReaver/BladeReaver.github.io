@@ -59,4 +59,4 @@ When that is done you start simple and add a small step one by one, don't try to
 
 ----
 
-If you want an example pipeline check out [JenkinsFile](Jenkinsfile).
+If you want an example pseudo pipeline check out [JenkinsFile](Jenkinsfile).
