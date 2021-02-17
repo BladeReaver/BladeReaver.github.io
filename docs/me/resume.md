@@ -84,7 +84,16 @@ Chris...
 
 ## ABN AMRO / Fortis
 ### Jun 2010 - Jul 2010 _ SQL developer
-Chris...
+I worked for ABN AMRO as an SQL developer. ABN and Fortis were merging together, and they needed test scripts to validate
+that data was correctly migrated/merged.
+
+- [SQL](https://en.wikipedia.org/wiki/SQL)
+- []()
+- []()
+- []()
+- []()
+- []()
+
 
 ## Stater N.V.
 ### Oct 2007 - Aug 2009 _ Uniface engineer

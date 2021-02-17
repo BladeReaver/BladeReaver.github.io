@@ -1,0 +1,60 @@
+compiling, unit tests and other 'local' tests, creating a deployable artifact, deploy on a test machine, test deployment
+with automated tests, deploy on an acceptance machine, do automated regression tests, prepares a production deployment
+
+
+pipeline {
+    stages {
+        stage('compile') {
+            steps {
+                mvn clean install
+                mvn clean install -Pit
+                sh ''
+            }
+        }
+        stage('compile') {
+            steps {
+                sh 'mvn --version'
+            }
+        }
+        stage('compile') {
+            steps {
+                sh 'mvn --version'
+            }
+        }
+        stage('compile') {
+            steps {
+                sh 'mvn --version'
+            }
+        }
+        stage('compile') {
+            steps {
+                sh 'mvn --version'
+            }
+        }
+        stage('compile') {
+            steps {
+                sh 'mvn --version'
+            }
+        }
+        stage('compile') {
+            steps {
+                sh 'mvn --version'
+            }
+        }
+        stage('compile') {
+            steps {
+                sh 'mvn --version'
+            }
+        }
+        stage('compile') {
+            steps {
+                sh 'mvn --version'
+            }
+        }
+        stage('compile') {
+            steps {
+                sh 'mvn --version'
+            }
+        }
+    }
+}

@@ -10,58 +10,63 @@ pipeline {
 
     stage('Static code analysis') {
       steps {
-        sh 'mvn sonar:sonar'
+        sh 'mvn -U clean org.jacoco:jacoco-maven-plugin:prepare-agent install org.jacoco:jacoco-maven-plugin:report'
+        echo 'mvn sonar:sonar'
         sleep 10
-        sh 'check sonar quality gate'
+        echo 'Quality gate approved'
       }
     }
 
     stage('Create deployable') {
       steps {
-        sh '''mvn release:prepare
-mvn release:perform'''
+        echo 'mvn release:clean clean'
+        echo 'mvn -B release:prepare'
+        echo 'mvn -B release:perform'
       }
     }
 
-    stage('Deploy on TST ') {
+    stage('Deploy on TST') {
       steps {
-        sh '// Trigger deployment'
+        echo 'Deploy on TST'
+        echo 'Deployed!'
       }
     }
 
-    stage('Automated tests against TST deployment') {
+    stage('Automated tests on TST') {
       steps {
-        sh 'java -jar automated-tests.jar'
+        echo 'Run automated tests against deployed application on TST'
       }
     }
 
     stage('Deploy on ACC') {
       steps {
-        sh '// Trigger ACC deployment'
+        echo 'Deploy on ACC'
+        echo 'Deployed!'
       }
     }
 
-    stage('Automated regression tests against ACC') {
+    stage('Automated regression tests on ACC') {
       steps {
-        sh 'java -jar automated-regression-tests.jar'
+        echo 'Run automated tests against deployed applicaiton on ACC'
       }
     }
 
-    stage('Create PRD change/release') {
+    stage('Create PRD change') {
       steps {
-        sh '// Create change in some tool'
+        echo 'Change created'
       }
     }
 
     stage('Manual gate') {
       steps {
-        input 'Approved for deployment'
+        input 'Approved for PRD?'
       }
     }
 
     stage('Deploy on PRD') {
       steps {
-        sh '// Start production deployment'
+        echo 'Deployed on PRD'
+        echo 'Deployed!'
       }
     }
 

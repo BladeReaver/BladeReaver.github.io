@@ -42,8 +42,11 @@ extra:
       name: Chris Romkema on Instagram
 
 nav:
-  - home:
-    - about me: me/me.md
-    - resume: me/resume.md
-  - useful links:
-    - links: useful-links.md
+  - Home:
+    - About me: index.md
+    - Resume: me/resume.md
+  - Blogs:
+    - CI/CD: blogs/ci-cd/ci-cd-pipeline.md
+  - Useful links:
+    - Development Links: links/development-links.md
+    - Way of Working Links: links/way-of-working-links.md
